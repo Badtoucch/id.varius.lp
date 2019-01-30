@@ -1,0 +1,234 @@
+/*history*/
+.history {
+    padding: 81px 0;
+}
+
+.history__title {
+    position: relative;
+    margin-top: 78px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -78px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 61px;
+        height: 60px;
+        background: url('../img/block-circle.png') 0 0 no-repeat;
+    }
+}
+
+.history__subtitle {
+    margin-top: 9px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 48px;
+    color: #444;
+}
+
+.history__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 79px 0 65px;
+}
+
+.history__item {
+    position: relative;
+    padding: 76px 12px 25px;
+    flex-basis: 370px;
+    border: 4px solid #f64d01;
+    border-radius: 8px;
+    min-height: 307px;
+    box-shadow: 0px 20px 50px 0px rgba(134, 147, 162, 0.25);
+}
+
+.history__item_gel {
+
+    .history__pick {
+        width: 105px;
+        top: -44px;
+        left: 0;
+    }
+}
+
+.history__item_natural {
+
+    .history__pick {
+        width: 160px;
+        top: -75px;
+        left: -27px;
+    }
+}
+
+.history__item_tabl {
+    border-color: #62bd1f;
+
+    .history__circle {
+        border-right: 4px solid #62bd1f;
+        border-bottom: 4px solid #62bd1f;
+        border-left: 4px solid #62bd1f;
+    }
+
+    .history__pick {
+        width: 80px;
+        top: -40px;
+        left: 9px;
+    }
+}
+
+.history__circle {
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 109px;
+    height: 54px;
+    background-color: #fff;
+    border-right: 4px solid #f64d01;
+    border-bottom: 4px solid #f64d01;
+    border-left: 4px solid #f64d01;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+
+.history__pick {
+    position: absolute;
+}
+
+.history__img {
+    display: block;
+}
+
+.history__item-tile {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.history__desc {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    color: #444;
+}
+
+.history__desc-accent {
+    font-weight: 500;
+    color: #000;
+}
+
+.history__footnote {
+    text-align: center;
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .history__list {
+        margin: 79px 0 50px;
+    }
+
+    .history__item {
+        flex-basis: 315px;
+    }
+
+    .history__item-tile {
+        font-size: 22px;
+    }
+
+    .history__desc {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+    .history__subtitle {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .history__list {
+        margin: 79px 0 35px;
+    }
+
+    .history__item {
+        flex-basis: 240px;
+        padding: 60px 5px 15px;
+        min-height: 310px;
+    }
+
+    .history__item-tile {
+        margin-bottom: 5px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .history__footnote {
+        font-size: 23px;
+        line-height: 26px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .history__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .history__list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 70px 0 20px;
+    }
+
+    .history__item {
+        flex-basis: 280px;
+    }
+
+    .history__item {
+        box-shadow: none;
+        min-height: 245px;
+    }
+
+    .history__item_tabl {
+        margin-top: 60px;
+    }
+
+    .history__footnote {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+
+    .history__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .history__list {
+        margin: 55px 0 10px;
+    }
+
+    .history__item {
+        flex-basis: 300px;
+    }
+
+    .history__item_natural {
+        margin-top: 80px;
+    }
+
+}

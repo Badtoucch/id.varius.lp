@@ -10,7 +10,9 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 }
-
+*{
+	outline: none;
+}
 article,
 aside,
 details,
@@ -60,7 +62,8 @@ abbr[title] {
 
 b,
 strong {
-	font-weight: 700
+	font-weight: 500;
+	color: #000000;
 }
 
 dfn {
@@ -290,53 +293,308 @@ input::-ms-clear {
 	line-height: 48px;
 }
 
-
-
-
-
-
 ::-webkit-input-placeholder {
-	color: #666666;
+	color: #989898;
 	font-weight: 400;
 	font-size: 16px;
 }
 
 ::-moz-placeholder {
-	color: #666666;
+	color: #989898;
 	font-weight: 400;
 	font-size: 16px;
 }
 
 /* Firefox 19+ */
 :-moz-placeholder {
-	color: #666666;
+	color: #989898;
 	font-weight: 400;
 	font-size: 16px;
 }
 
 /* Firefox 18- */
 :-ms-input-placeholder {
-	color: #666666;
+	color: #989898;
 	font-weight: 400;
 	font-size: 16px;
 }
 
-
-
-
-
-
 .slick-slide {
-  outline: none
+	outline: none
 }
 
 .wrapper {
-  box-sizing: border-box;
-  max-width: 1170px;
-  margin: 0 auto;
+	box-sizing: border-box;
+	max-width: 1170px;
+	margin: 0 auto;
 }
-.orange{
+
+.orange {
 	color: #fa4f01;
+}
+
+.green {
+	color: #62bd1f;
+}
+
+.form {
+	width: 270px;
+	box-shadow: 0 0 35px rgba(134, 147, 162, 0.25);
+	border: 4px solid #f64d01;
+	background-color: #ffffff;
+	border-radius: 10px;
+  &-pay{
+		height: 45px;
+box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.04);
+background-color: #ffffff;
+border-radius: 0 0 10px 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 13px;
+&__text{
+	padding-left: 33px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(../img/icon-money.svg) no-repeat center;
+		width: 22px;
+height: 19px;
+	}
+}
+	}
+	&-top {
+		background-color: #f2ffe3;
+		padding: 15px 20px 0;
+		position: relative;
+		border-radius: 10px 10px 0 0;
+		padding-bottom: 9px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -147px;
+			border: 131px solid transparent;
+			border-top: 17px solid #f2ffe3;
+		}
+
+		&__title {
+			color: #000000;
+			font-size: 23px;
+			font-weight: 500;
+			line-height: 22px;
+			text-align: center;
+
+			.form-top__date {
+				color: #62bd1f;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 28px;
+			}
+		}
+
+		&__pack {
+			color: #000000;
+			text-align: center;
+			margin-top: 5px;
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
+
+	form {
+		margin: 30px 21px 0;
+	}
+
+	&__input {
+		width: 100%;
+		height: 58px;
+		box-shadow: inset 2px 3px 5px rgba(34, 35, 39, 0.09);
+		border: 1px solid #dedddd;
+		background-color: #ffffff;
+		border-radius: 5px;
+		padding-left: 52px;
+		padding-right: 10px;
+
+		&:hover,
+		&:focus {
+			box-shadow: inset 0px 0px 17px 3px #947e7863;
+		}
+	}
+
+	&__input-name {
+		position: relative;
+		margin-bottom: 16px;
+
+		&:before {
+			content: '';
+			background: url(../img/user.svg) no-repeat center;
+			width: 19px;
+			height: 23px;
+			position: absolute;
+			top: 17px;
+			left: 21px;
+		}
+	}
+
+	&__input-phone {
+		position: relative;
+		margin-bottom: 16px;
+
+		&:before {
+			content: '';
+			background: url(../img/phone.svg) no-repeat center;
+			width: 21px;
+			height: 24px;
+			position: absolute;
+			top: 19px;
+			left: 20px;
+		}
+	}
+}
+
+.btn {
+	width: 100%;
+	height: 70px;
+	color: #ffffff;
+	background-image: linear-gradient(to right, #8fc019 0%, #62bd1f 26%, #62bd1f 50%, #bbf237 50%, #62bd1f 76%, #a6ef34 100%);
+	background-size: 200% auto;
+	font-size: 27px;
+	font-weight: 900;
+	line-height: 23px;
+	text-align: center;
+	background-position: 0 0;
+	border: 0;
+	border-bottom: 5px solid #629418;
+	border-radius: 6px 6px 8px 8px;
+	transition: background-position 0.5s;
+	box-shadow: 0px 27px 23px -27px #7cbf1b;
+
+	&:hover {
+		background-position: 100% 0;
+	}
+
+	span {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 21px;
+		display: block;
+	}
+}
+
+.info-price {
+	text-align: center;
+	margin-top: 12px;
+	opacity: 0.7;
+	color: #1f1f1f;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.price {
+	display: flex;
+	margin-top: 13px;
+	justify-content: space-between;
+
+	&-old {
+		&__title {
+			color: #666666;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 18px;
+		}
+
+		&__count {
+			font-size: 28px;
+			letter-spacing: -1.4px;
+			font-weight: 400;
+			color: #a2a1a1;
+			margin-top: 7px;
+
+			.x_currency {
+				color: #a2a1a1;
+				font-family: Roboto;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				padding-left: 2px;
+				letter-spacing: normal;
+			}
+
+			.x_price_previous {
+				position: relative;
+
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%) rotate(20deg);
+					height: 1px;
+					width: 100%;
+					background-color: #f57373;
+
+				}
+
+				&:after {
+					transform: translate(-50%, -50%) rotate(-20deg);
+				}
+			}
+		}
+	}
+
+	&-new {
+		position: relative;
+		left: 9px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: -14px;
+			top: 2px;
+			width: 1px;
+			height: 52px;
+			background-color: #d1d0d0;
+			opacity: 0.6;
+
+		}
+
+		&__title {
+			color: #30302f;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 18px;
+		}
+
+		&__count {
+			font-size: 44px;
+			font-weight: 900;
+			letter-spacing: -1.1px;
+			color: #62bd1f;
+			line-height: 0;
+			margin-top: 20px;
+
+			.x_currency,
+			.star {
+				color: #62bd1f;
+				font-family: Roboto;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 24px;
+				padding-left: 2px;
+			}
+
+			.star {
+				padding-left: 1px;
+			}
+		}
+	}
 }
 
 @import "common/imports/slick.scss";
@@ -360,11 +618,13 @@ input::-ms-clear {
 	.section {
 		padding: 60px 0;
 	}
+
 	.wrapper {
 		max-width: 1024px;
 		padding-right: 10px;
 		padding-left: 10px;
 	}
+
 	.title {
 		font-size: 44px;
 		line-height: 44px;
@@ -384,9 +644,7 @@ input::-ms-clear {
 		font-size: 39px;
 		line-height: 39px;
 	}
-	.subtitle {
-		font-size: 18px;
-	}
+
 }
 
 @media screen and (max-width: 767px) {
@@ -397,6 +655,7 @@ input::-ms-clear {
 	.wrapper {
 		max-width: 640px;
 	}
+
 	.title {
 		font-size: 34px;
 		line-height: 34px;
@@ -411,9 +670,9 @@ input::-ms-clear {
 	.wrapper {
 		max-width: 480px;
 	}
+
 	.title {
 		font-size: 26px;
 		line-height: 26px;
 	}
 }
-

@@ -336,7 +336,11 @@ input::-ms-clear {
 .green {
 	color: #62bd1f;
 }
-
+.block-circle{
+display: flex;
+justify-content: center;
+margin-bottom: 12px;
+}
 .form {
 	width: 270px;
 	box-shadow: 0 0 35px rgba(134, 147, 162, 0.25);
@@ -628,6 +632,9 @@ height: 19px;
 	.title {
 		font-size: 44px;
 		line-height: 44px;
+	}
+	.block-circle{
+		margin-bottom: 5px;
 	}
 }
 

@@ -1,5 +1,5 @@
 .footer{
-	padding-top: 135px;
+	padding-top: 185px;
 	padding-bottom: 50px;
 	&-content{
 		
@@ -40,6 +40,11 @@
 		&__right{
 			text-align: right;
 		}
+	}
+}
+@media screen and (max-width: 1199px) {
+	.footer{
+		padding-top: 140px;
 	}
 }
 @media screen and (max-width: 1023px) {

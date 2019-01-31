@@ -1,0 +1,391 @@
+/*composition*/
+.composition {
+    padding: 70px 0;
+    background: url('../img/bg.jpg') 0 0 no-repeat;
+    background-size: cover;
+}
+
+.composition__subtitle {
+    margin-top: 13px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 48px;
+    color: #444;
+}
+
+.composition__main {
+    margin: 8px 0 17px;
+    padding: 0 32px;
+    counter-reset: composition;
+}
+
+.composition__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.composition__row_first {
+    position: relative;
+}
+
+.composition__row_second {
+    margin-top: 22px;
+}
+
+.composition__pack {
+    position: absolute;
+    bottom: -179px;
+    left: 49%;
+    width: 384px;
+    transform: translateX(-50%);
+}
+
+.composition__item {
+    position: relative;
+    flex-basis: 308px;
+}
+
+.composition__item_1 {
+
+    .composition__pic {
+        width: 229px;
+
+        &::before {
+            right: -40px;
+        }
+    }
+
+    .composition__item-title {
+
+        &::before {
+            top: 14px;
+            right: -63px;
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.composition__item_2 {
+
+    .composition__pic {
+        width: 241px;
+        margin-bottom: 1px;
+
+        &::before {
+            left: -30px;
+        }
+    }
+
+    .composition__item-title {
+        margin-bottom: 11px;
+
+        &::before {
+            top: 12px;
+            left: -90px;
+        }
+    }
+}
+
+.composition__item_3 {
+
+    .composition__pic {
+        width: 232px;
+
+        &::before {
+            right: -40px;
+        }
+    }
+
+    .composition__item-title {
+
+        &::before {
+            top: -15px;
+            right: -63px;
+            transform: rotateY(180deg) rotateX(180deg);
+        }
+    }
+}
+
+.composition__item_4 {
+
+    .composition__pic {
+        width: 230px;
+
+        &::before {
+            left: -30px;
+        }
+    }
+
+    .composition__item-title {
+
+        &::before {
+            top: -7px;
+            left: -90px;
+            transform: rotateX(180deg);
+        }
+    }
+}
+
+.composition__pic {
+    margin: 0 auto 5px;
+
+    &::before {
+        counter-increment: composition;
+        content: counter(composition);
+        position: absolute;
+        top: 55px;
+        font-size: 108px;
+        font-weight: 900;
+        font-style: italic;
+        line-height: 80px;
+        color: #e7ceb1;
+    }
+}
+
+.composition__img {
+    display: block;
+}
+
+.composition__item-title {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 108px;
+        height: 25px;
+        background: url('../img/composition-pointer.png') 0 0 no-repeat;
+    }
+}
+
+.composition__item-desc {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #444;
+}
+
+.composition__item-accent {
+    font-weight: 500;
+    color: #000;
+}
+
+.composition__footnote {
+    text-align: center;
+    font-size: 27px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .composition__main {
+        padding: 0;
+    }
+
+    .composition__item {
+        flex-basis: 270px;
+    }
+
+    .composition__item_1 {
+
+        .composition__item-title {
+
+            &::before {
+                top: 14px;
+                right: -80px;
+            }
+        }
+    }
+
+    .composition__item_2 {
+
+        .composition__pic {
+
+            &::before {
+                left: -50px 
+            }
+        }
+
+        .composition__item-title {
+
+            &::before {
+                left: -110px;
+            }
+        }
+    }
+
+    .composition__item_3 {
+
+        .composition__item-title {
+
+            &::before {
+                top: -10px;
+                right: -80px;
+            }
+        }
+    }
+
+    .composition__item_4 {
+
+        .composition__pic {
+
+            &::before {
+                left: -50px 
+            }
+        }
+
+        .composition__item-title {
+
+            &::before {
+                left: -110px;
+            }
+        }
+    }
+
+    .composition__pack {
+        bottom: -149px;
+        width: 350px;
+    }
+
+    .composition__item-desc {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+    .composition__subtitle {
+        margin-top: 5px;
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .composition__item {
+        flex-basis: 260px;
+    }
+
+    .composition__item_1 {
+
+        .composition__pic {
+
+            width: calc(229px - 10%);
+        }
+    }
+
+    .composition__item_2 {
+
+        .composition__pic {
+
+            width: calc(241px - 10%);
+        }
+    }
+
+    .composition__item_3 {
+
+        .composition__pic {
+
+            width: calc(232px - 10%);
+        }
+    }
+
+    .composition__item_4 {
+
+        .composition__pic {
+
+            width: calc(230px - 10%);
+        }
+    }
+
+    .composition__pack {
+        left: 50%;
+        bottom: -30px;
+        width: 210px;
+    }
+
+    .composition__item-title {
+        margin-bottom: 5px;
+        font-size: 18px;
+        line-height: 23px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .composition__item-desc {
+        line-height: 22px;
+    }
+
+    .composition__footnote {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .composition__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .composition__row_first {
+        margin-top: 200px;
+    }
+
+    .composition__pack {
+        width: 250px;
+        top: -185px;
+    }
+
+    .composition__pic {
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .composition__footnote {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+
+    .composition__main {
+        margin: 8px 0 10px;
+    }
+
+    .composition__row {
+        flex-direction: column;
+    }
+
+    .composition__row_second {
+        margin-top: 0;
+    }
+
+    .composition__item-title {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .composition__item-desc {
+        line-height: 20px;
+    }
+
+    .composition__footnote {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+}

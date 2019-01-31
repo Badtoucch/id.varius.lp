@@ -347,6 +347,19 @@ margin-bottom: 12px;
 	border: 4px solid #f64d01;
 	background-color: #ffffff;
 	border-radius: 10px;
+	position: relative;
+	z-index: 5;
+	&:before{
+		content: '';
+		position: absolute;
+		right: -41px;
+		top: 50%;
+		transform: translateY(-48%);
+		background: url(../img/form-arrow.svg) no-repeat center;
+		width: 53px;
+		height: 294px;
+		z-index: 20;
+	}
   &-pay{
 		height: 45px;
 box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.04);
@@ -618,6 +631,11 @@ height: 19px;
 @import "common/k_footer.scss";
 @import "common/l_popup.scss";
 
+@media screen and (max-width: 1250px) {
+	.form:before{
+		display: none;
+	}
+}
 @media screen and (max-width: 1199px) {
 	.section {
 		padding: 60px 0;

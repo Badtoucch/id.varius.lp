@@ -1,0 +1,379 @@
+.reviews {
+	padding: 57px 0 96px;
+
+	&-content {
+		margin-top: 54px;
+
+		&-box {
+			box-shadow: 0 0 20px rgba(134, 147, 162, 0.25);
+			border: 4px solid #f64d01;
+			background-color: #ffffff;
+			
+			border-radius: 5px;
+			display: flex !important;
+			flex-direction: column;
+			align-items: center;
+			padding: 0 0 0px;
+			margin-bottom: 150px;
+			&__cbtn{
+				width: 30px;
+				height: 30px;
+				background-color: #73ad32;
+				border-radius: 50%;
+				position: relative;
+				margin-bottom: -16px;
+				position: relative;
+				transition: all .5s;
+				cursor: pointer;
+				&:hover{
+					background-color: #8cc025;
+				}
+				&:before, &:after{
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -25%);
+					width: 14px;
+					height: 2px;
+					background-color: #fff;
+				}
+				&:after{
+					transform: translate(-50%, -25%) rotate(-90deg);
+				}
+			}
+		}
+
+		&__img {
+			width: 169px;
+			height: 169px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			position: relative;
+			margin-top: -88.5px;
+		}
+
+		&__name {
+			color: #000000;
+			font-size: 20px;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: 500;
+			line-height: normal;
+			br{
+				display: none;
+			}
+		}
+
+		&__briefly {
+			background-color: #fff1e1;
+			text-align: center;
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 21px;
+			position: relative;
+			color: #444444;
+			font-size: 17px;
+			font-style: italic;
+			line-height: 22px;
+			height: 84px;
+
+			&:before {
+				content: '';
+				background: url(../img/rev-icon.png) no-repeat;
+				width: 23px;
+				height: 17px;
+				position: absolute;
+				top: -8.5px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&__text {
+			color: #444444;
+			font-size: 17px;
+			font-weight: 400;
+			line-height: 25px;
+			padding-left: 19px;
+			padding-right: 19px;
+			margin-top: 14px;
+			text-align: center;
+			max-height: 173px;
+			overflow: hidden;
+			margin-bottom: 12px;
+			transition: all 1s;
+			width: 100%;
+		}
+	}
+}
+.content-plus .reviews-content__text{
+	max-height: 800px;
+}
+.content-plus .reviews-content-box__cbtn:after {
+	display: none;
+}
+.slick-slide {
+	margin: 0 15px;
+	margin-top: 85px;
+	margin-bottom: 15px;
+}
+.slick-list {
+	margin: 0 -15px;
+}
+.slick-next {
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+
+	background-color: #fff1e1;
+	right: -60px;
+	border-radius: 50%;
+	transition: all .5s;
+}
+.slick-prev {
+	font-size: 0;
+	width: 41px;
+	height: 41px;
+	background-color: #fff1e1;
+	left: -60px;
+	border-radius: 50%;
+	transition: all .5s;
+}
+.slick-next:hover, .slick-next:focus,.slick-prev:hover, .slick-prev:focus {
+	&:before, &:after{
+		background-color: #ffffff;
+	}
+	background-color: #f64d01;
+}
+ 
+	
+
+.slick-next:before {
+	font-size: 0;
+	width: 2px;
+	height: 12px;
+	background-color: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(75%, -75%) rotate(-45deg);
+	transition: all .5s;
+}
+.slick-next:after {
+	content: "";
+	font-size: 0;
+	width: 2px;
+	height: 12px;
+	background-color: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(75%, -14%) rotate(45deg);
+}
+.slick-prev:before {
+	font-size: 0;
+	width: 2px;
+	height: 12px;
+	background-color: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	transform: translate(-75%, -78%) rotate(45deg);
+
+	transition: all .5s;
+}
+.slick-prev:after {
+	content: "";
+	font-size: 0;
+	width: 2px;
+	height: 12px;
+	background-color: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	transform: translate(-75%, -13%) rotate(-45deg);
+
+	transition: all .5s;
+}
+@media screen and (max-width: 1345px) {
+  .slick-next {
+    right: 0px; }
+  .slick-prev {
+    left: 0px; }
+  .slick-list {
+		margin: 0 40px; }
+	.reviews-content__text{
+		br{
+			display: none;
+		}
+	}
+	.reviews-content__name{
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.reviews-content__briefly{
+		height: 70px;
+	}
+	}
+
+	@media screen and (max-width: 1199px) {
+		.slick-slide {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		.reviews {
+		
+		
+			&-content {
+		
+		margin-top: 30px;
+				&-box {
+				
+					&__cbtn{
+					
+					
+				
+					}
+				}
+		
+				&__img {
+				
+				}
+		
+				&__name {
+			font-size: 16px;
+			padding-left: 9px;
+		padding-right: 9px;
+		margin-top: 15px;
+		br{
+			display: block;
+		}
+				}
+		
+				&__briefly {
+		font-size: 16px;
+		line-height: normal;
+		margin-top: 18px;
+				
+				}
+		
+				&__text {
+					font-size: 16px;
+					line-height: normal;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	
+	@media screen and (max-width: 1023px) {
+		.reviews-content__text{
+			margin-top: 10px;
+		}
+		.reviews {
+		
+		
+			&-content {
+				margin-top: 25px;
+			}}
+	}
+	
+	@media screen and (max-width: 767px) {
+		.slick-slide {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		.reviews {
+		
+		
+			&-content {
+		margin-top: 20px;
+		
+				&-box {
+				
+					&__cbtn{
+					
+					
+				
+					}
+				}
+		
+				&__img {
+				
+				}
+		
+				&__name {
+			font-size: 16px;
+			padding-left: 9px;
+		padding-right: 9px;
+		margin-top: 10px;
+		br{
+			display: block;
+		}
+				}
+		
+				&__briefly {
+		font-size: 15px;
+		line-height: normal;
+		height: 65px;
+				margin-top: 15px;
+				}
+		
+				&__text {
+					font-size: 16px;
+					line-height: normal;
+					padding-left: 8px;
+					padding-right: 8px;
+				}
+			}
+		}
+	}
+	
+	@media screen and (max-width: 639px) {
+		.slick-next {
+			right: 55px;
+			transform: translate(0, 0%);
+			z-index: 10;
+			top: 160px;
+	}
+	.slick-prev {
+    left: 55px;
+    transform: translate(0, 0%);
+    z-index: 10;
+    top: 160px;
+}
+.reviews {
+		
+		
+	&-content {
+		margin-top: 15px;
+	}}
+	}
+	@media screen and (max-width: 400px) {
+		.slick-list {
+			margin: 0 0px;
+		}
+		.slick-slide{
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+		.slick-next {
+			right: 30px;
+		
+	}
+	.slick-prev {
+    left: 30px;
+   
+}
+	}

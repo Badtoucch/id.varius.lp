@@ -5,19 +5,19 @@
 
 .history__title {
     position: relative;
-    margin-top: 78px;
+    // margin-top: 78px;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: -78px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        width: 61px;
-        height: 60px;
-        background: url('../img/block-circle.png') 0 0 no-repeat;
-    }
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: -78px;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     display: block;
+    //     width: 61px;
+    //     height: 60px;
+    //     background: url('../img/block-circle.png') 0 0 no-repeat;
+    // }
 }
 
 .history__subtitle {

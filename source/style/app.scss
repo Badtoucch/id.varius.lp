@@ -340,6 +340,9 @@ input::-ms-clear {
 display: flex;
 justify-content: center;
 margin-bottom: 12px;
+img{
+	animation: 10s linear 0s normal none infinite running rote;
+}
 }
 .form {
 	width: 270px;
@@ -701,4 +704,20 @@ height: 19px;
 		font-size: 26px;
 		line-height: 26px;
 	}
+}
+@keyframes rote {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rote {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

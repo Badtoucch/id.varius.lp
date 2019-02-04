@@ -11,7 +11,7 @@
 	&-logo {
 		position: absolute;
 		top: 40px;
-		left: 0;
+		left: 0px;
 		z-index: 2;
 
 		&__img {}
@@ -151,6 +151,9 @@
 			&__list{
 				font-size: 16px;
 			}
+		}
+		&-logo{
+			left: 10px;
 		}
 		&-content{
 			width: 660px;

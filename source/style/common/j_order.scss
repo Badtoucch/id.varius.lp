@@ -56,24 +56,32 @@
 @media screen and (max-width: 1199px) {
 
     .order__list {
-
+			margin-top: 30px;
         &::before {
             display: none;
         }
     }
-
+		.order__pic{
+			margin-bottom: 15px;
+		}
+		.order__item-title{
+			margin-bottom: 5px;
+		}
+		.order__item-desc{
+			line-height: normal;
+		}
 }
 
 @media screen and (max-width: 1023px) {
 
     .order__list {
-        margin-top: 40px;
+        margin-top: 25px;
     }
 
     .order__pic {
         width: 230px;
         height: 230px;
-        margin: 0 auto 30px;
+        margin: 0 auto 10px;
         border: 20px solid #fff1e1;
     }
 
@@ -84,9 +92,11 @@
 
     .order__item-desc {
         font-size: 17px;
-        line-height: 22px;
+        line-height:normal;
     }
-
+		.order__item-title {
+			margin-bottom: 0px;
+	}
 }
 
 @media screen and (max-width: 767px) {

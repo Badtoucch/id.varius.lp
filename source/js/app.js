@@ -260,6 +260,9 @@ function postDate(sa) {
                 innerDate += "-";
                 innerDate += (month < 10) ? ("0" + month) : month;
                 innerDate += "-" + year;
+								return innerDate;
+						case "year":
+                innerDate += year;
                 return innerDate;
             
             default: 

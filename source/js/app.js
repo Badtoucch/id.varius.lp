@@ -1,51 +1,42 @@
-function revClose() {
-	let temper = $('.reviews-content-box');
-	for (let i = 0; i < temper.length; i++) {        temper[i].classList.remove('content-plus');    }
+// REVIEWS
+
+var addReviewsClass = function () {
+    $(this).parent('.reviews-item').toggleClass('active').siblings().removeClass('active');
 }
-revClose();
-$('.reviews-content').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-	revClose();
-});
-$('.reviews-content-box__cbtn').on('click', function () {
-	this.parentElement.parentElement.classList.toggle("content-plus");
-});
-$('.reviews-content').slick({
-	infinite: true,
-	slidesToShow: 3,
-	slidesToScroll: 3,
-	arrows: true,
-	responsive: [
-	{
-		breakpoint: 1024,
-		settings: {
-			slidesToShow: 2,
-			slidesToScroll: 2
-		}
-	},
-	{
-		breakpoint: 767,
-		settings: {
-			slidesToShow: 2,
-			slidesToScroll: 2
-		}
-	},
-	{
-		breakpoint: 640,
-		settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1
-		}
-	}
-]
+
+$(document).on('click', '.js-reviews-add-class', addReviewsClass);
+
+$('.reviews-slider').slick({
+    slidesToShow: 3,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 
+$('.reviews-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('.reviews-item').removeClass('active');
+});
+
+// REVIEWS END
+
 $(document).ready(function(){
-	$('.go-to').click( function(){ 
-var scroll_el = $(this).attr('href'); 
-			if ($(scroll_el).length != 0) { 
-		$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000); 
+	$('.go-to').click( function(){
+var scroll_el = $(this).attr('href');
+			if ($(scroll_el).length != 0) {
+		$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000);
 			}
-		return false; 
+		return false;
 	});
 });
 // Updated 29.03.2018: data-format for IE

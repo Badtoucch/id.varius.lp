@@ -388,6 +388,23 @@ input::-ms-clear {
 	background: url("../img/line-bottom.png") no-repeat center;
 }
 
+.section-beige {
+	position: relative;
+	z-index: 2;
+}
+
+.section-beige:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	bottom: 0;
+	z-index: -1;
+	transform: translate(-50%, 0);
+	background: #f8f2eb url("../img/section-beige.png") no-repeat center;
+}
+
 @import "common/imports/slick.scss";
 @import "common/imports/slick-theme.scss";
 

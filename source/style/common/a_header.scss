@@ -46,7 +46,8 @@
 		margin-left: auto;
 		margin-top: 50px;
 		margin-right: 80px;
-
+position: relative;
+z-index: 16;
 		&__list {
 			color: #444444;
 			font-size: 19px;
@@ -184,7 +185,7 @@ margin-top: 14px;
 	}
 }
 &-ibited{
-	width: 307px;
+	width: 100%;
 height: 40px;
 box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 border: 4px solid #eedfcf;

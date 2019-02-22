@@ -1,0 +1,22 @@
+.order{
+	padding-top: 70px;
+	padding-bottom: 110px;
+	.use-box__img:before{
+		background-color: #f3e7d8;
+	}
+	.use-box:nth-child(2n+1) {
+    margin-top: 60px;
+}
+.lr-line:before, .lr-line:after{
+	top: 60px;
+}
+.use-box__img{
+position: relative;
+img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+}
+}

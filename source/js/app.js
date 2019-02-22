@@ -1,3 +1,35 @@
+// REVIEWS
+
+var addReviewsClass = function () {
+    $(this).parent('.reviews-item').toggleClass('active').siblings().removeClass('active');
+}
+
+$(document).on('click', '.js-reviews-add-class', addReviewsClass);
+
+$('.reviews-slider').slick({
+    slidesToShow: 3,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+$('.reviews-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('.reviews-item').removeClass('active');
+});
+
+// REVIEWS END
+
 $(document).ready(function(){
 	$('.go-to').click( function(){
 var scroll_el = $(this).attr('href');

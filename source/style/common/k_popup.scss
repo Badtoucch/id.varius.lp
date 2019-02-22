@@ -1,0 +1,80 @@
+.popup-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  background: #faf0da;
+  padding: 65px 75px 55px 105px;
+}
+
+.popup-wrap:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  background: url(../img/section-beige.png) no-repeat center;
+}
+
+.popup-logo {
+  position: absolute;
+  left: 240px;
+  top: -25px;
+}
+
+.popup-product {
+  flex: none;
+  margin-right: 110px;
+  z-index: 2;
+}
+
+.popup-form {
+  position: relative;
+  z-index: 2;
+}
+
+//.ever-popup__inner {
+//  padding-top: 0 !important;
+//}
+//
+//.ever-popup__close {
+//  top: 25px !important;
+//  right: 25px !important;
+//}
+
+.ever-popup__close:after,
+.ever-popup__close:before {
+  height: 3px !important;
+  background-color: #92b069 !important;
+}
+
+@media screen and (min-width: 1024px){
+  .ever-popup__inner {
+    padding-top: 0 !important;
+  }
+
+  .ever-popup__close {
+    top: 25px !important;
+    right: 25px !important;
+  }
+
+}
+
+@media screen and (max-width: 1023px){
+  .popup-logo,
+  .popup-product,
+  .popup-wrap:after{
+    display: none;
+  }
+
+  .popup-wrap {
+    background: transparent;
+    padding: 0;
+  }
+
+
+}

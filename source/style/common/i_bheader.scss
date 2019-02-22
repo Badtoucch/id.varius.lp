@@ -1,8 +1,144 @@
 .bheader{
-	background: url(../img/bg1.jpg) no-repeat center, linear-gradient(to right, #f6e3cf 0%, #fff8f0 50%, #f6e3cf 100%);
+	background: url(../img/bg1.jpg) no-repeat 46% 50%, linear-gradient(to right, #f6e3cf 0%, #fff8f0 50%, #f6e3cf 100%);
 	position: relative;
 	z-index: 1;
 	background-size: cover;
-	padding-top: 90px;
+	padding-bottom: 0px;
+	&:before {
+    content: '';
+    bottom: -9px;
+    background: url(../img/line-top.png) no-repeat center;
+    z-index: 15;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    z-index: 3;
+}
+&:after {
+	content: '';
+	position: absolute;
+	top: -15px;
+	background: url(../img/line-bottom.png) no-repeat center;
+	z-index: 15;
+	width: 100%;
+    height: 25px;
+}
+	&-legs{
+		position: relative;
+		z-index: 15;
+		img{
+			position: absolute;
+			top: 0;
+			left: 14px;
+			width: 438px;
+height: 890px;
+		}
+	}
+	&-content{
+		display: flex;
+		padding-top: 95px;
+	}
+	.header-exposition{
+		margin-top: 0;
+		margin-right: 78px;
+	}
+	&-form{
+		.form{
+			position: relative;
+		}
+	}
+	.header-ibited{
+		margin-top: 53px;
+		position: relative;
+		z-index: 17;
+	}
+	.header-exposition__subtitle{
+		margin-top: 22px;
+	}
+	.header-exposition__pack{
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 1250px) {
+	.form:after{
+		display: none;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.bheader .header-exposition {
+  
+    margin-right: 40px;
+}
+.bheader-content{
+	padding-top: 60px;
+}
+.bheader .header-exposition__subtitle {
+	margin-top: 20px;
+}
+.bheader .header-exposition__pack {
+	margin-top: 40px;
+}
+.bheader .header-ibited {
+	margin-top: 35px;
 
+}
+.bheader-legs img{
+	position: absolute;
+	top: 0;
+	left: 32px;
+	width: 398px;
+	height: auto;
+}
+}
+
+@media screen and (max-width: 1023px) {
+	.bheader-legs img{
+		display: none;
+	}
+	.bheader .header-exposition{
+		margin-right: 0;
+	}
+	.bheader-content{
+		flex-wrap: wrap;
+	}
+	.bheader-form{
+		width: 100%;
+		order: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.bheader{
+		padding: 40px 0;
+		&:before, &:after{
+			display: none;
+		}
+	}
+	.bheader-content{
+		padding-top: 0;
+	}
+	.bheader .header-exposition__subtitle {
+    margin-top: 8px;
+}
+}
+
+@media screen and (max-width: 767px) {
+	.bheader {
+    padding: 30px 0;
+}
+}
+
+@media screen and (max-width: 639px) {
+.bheader-form{
+	flex-direction: column;
+	margin-top: 15px;
+}
+.header-form__pack {
+	display: block;
+	width: 225px;
+}
+.bheader {
+	padding: 25px 0;
+}
 }

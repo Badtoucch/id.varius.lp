@@ -1,7 +1,7 @@
 .reviews {
   padding: 60px 0;
   position: relative;
-  z-index: 20;
+  z-index: 12;
 }
 
 .reviews-title {
@@ -200,6 +200,12 @@
 .reviews-btn {
   max-width: 242px;
   margin: 0 auto;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .reviews-item__text {
+    min-height: 227px;
+  }
 }
 
 @media screen and (max-width: 1349px){

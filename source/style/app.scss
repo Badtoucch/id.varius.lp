@@ -776,7 +776,8 @@ height: 58px;
 		max-width: 570px;
 		height: 50px;
 	}
-	.section-line:after {
+	.section-line:before,
+	.section-line:after{
 		display: none;
 	}
 	.fact-btn {

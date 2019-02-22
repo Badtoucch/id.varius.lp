@@ -386,13 +386,13 @@ margin-top: 17px;
 }
 
 .section-line:before {
-	top: -15px;
+	top: -16px;
 	background: url("../img/line-top.png") no-repeat center;
 	z-index: 15;
 }
 
 .section-line:after {
-	bottom: -15px;
+	bottom: -16px;
 	background: url("../img/line-bottom.png") no-repeat center;
 	z-index: 15;
 }
@@ -411,7 +411,7 @@ margin-top: 17px;
 	bottom: 0;
 	z-index: -1;
 	transform: translate(-50%, 0);
-	background: #f8f2eb url("../img/section-beige.png") no-repeat center;
+	background: #fff8f0 url("../img/section-beige.png") no-repeat center;
 }
 .help-box{
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
@@ -496,9 +496,12 @@ height: 58px;
 		max-width: 570px;
 		height: 50px;
 	}
+	.section-line:after {
+		display: none;
+	}
 	.fact-btn {
-    margin-top: 25px;
-}
+		margin-top: 25px;
+	}
 }
 
 @media screen and (max-width: 767px) {

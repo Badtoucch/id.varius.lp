@@ -1,5 +1,7 @@
 .reviews {
   padding: 60px 0;
+  position: relative;
+  z-index: 20;
 }
 
 .reviews-title {
@@ -9,6 +11,45 @@
 
 .reviews-slider {
   margin-bottom: 55px;
+}
+
+.reviews-slider  .slick-prev,
+.reviews-slider  .slick-next {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #92b069;
+}
+
+.reviews-slider  .slick-prev:hover:before,
+.reviews-slider  .slick-next:hover:before {
+  opacity: 1;
+}
+
+.reviews-slider  .slick-prev {
+  left: -55px;
+}
+
+.reviews-slider  .slick-next {
+  right: -55px;
+}
+
+.reviews-slider  .slick-prev:before,
+.reviews-slider  .slick-next:before{
+  opacity: 0.5;
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../img/reviews-arrow.png") no-repeat center;
+  width: 11px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews-slider  .slick-prev:before {
+  transform: translate(-50%, -50%) rotate(180deg);
 }
 
 .reviews-item {
@@ -58,6 +99,9 @@
 }
 
 .reviews-item__conclusion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   color: #444444;
   font-size: 17px;
@@ -158,6 +202,19 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1349px){
+  .reviews-slider {
+    margin: 0 40px 55px;
+  }
+
+  .reviews-slider  .slick-prev {
+    left: -45px;
+  }
+
+  .reviews-slider  .slick-next {
+    right: -45px;
+  }
+}
 
 @media screen and (max-width: 1199px){
   .reviews-title {
@@ -206,37 +263,12 @@
     margin-bottom: 20px;
   }
 
-  .reviews-slider  .slick-prev,
-  .reviews-slider  .slick-next {
-    width: 41px;
-    height: 41px;
-    border-radius: 50%;
-    background-color: #92b069;
-  }
-
   .reviews-slider  .slick-prev {
     left: -45px;
   }
 
   .reviews-slider  .slick-next {
     right: -45px;
-  }
-
-  .reviews-slider  .slick-prev:before,
-  .reviews-slider  .slick-next:before{
-    position: absolute;
-    display: block;
-    content: "";
-    background: url("../img/reviews-arrow.png") no-repeat center;
-    width: 11px;
-    height: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .reviews-slider  .slick-prev:before {
-    transform: translate(-50%, -50%) rotate(180deg);
   }
 
   .reviews-conclusion {

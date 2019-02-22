@@ -9,8 +9,18 @@ line-height: 24px;
 	position: relative;
 	z-index: 6;
 }
-
-
+.ev-footer, .create_rom_footer{
+	padding: 0 !important;
+}
+.ev-footer__link{
+	color: #666666 !important;
+font-size: 16px;
+font-weight: 400;
+}
+.ev-footer__logo svg{
+	width: 50px !important;
+	height: 50px !important;
+}
 .footer__wrap {
   display: flex;
   justify-content: center;

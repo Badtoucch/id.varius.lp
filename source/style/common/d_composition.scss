@@ -41,7 +41,7 @@
       height: 44px;
       border: 3px solid #92b069;
       border-radius: 50%;
-      background: url(../../img/check.svg) center center no-repeat,#fff;
+      background: url(../img/check.svg) center center no-repeat,#fff;
       background-size: 31px 24px;
       }
     &.-radical {
@@ -86,7 +86,7 @@
       content: "";
       width: 489px;
       height: 234px;
-      background: url("../../img/d-grapes.png") 100% no-repeat;
+      background: url("../img/d-grapes.png") 100% no-repeat;
       z-index: -1;
       bottom: 25px;
       right: 2px;
@@ -97,7 +97,7 @@
       width: 775px;
       height: 132px;
       content: "";
-      background: url("../../img/d-dashed.png")100% no-repeat;
+      background: url("../img/d-dashed.png")100% no-repeat;
       top: -43px;
       left: 161px;
       transform: translateX(-50%);
@@ -154,7 +154,7 @@
         height: 90px;
         content: '';
         z-index: -1;
-        background: url("../../img/d-lavanda.png") 100% no-repeat;
+        background: url("../img/d-lavanda.png") 100% no-repeat;
         top: 7px;
         left: 23px;
       }
@@ -169,7 +169,7 @@
         height: 111px;
         content: '';
         z-index: -1;
-        background: url("../../img/d-imbir.png") 100% no-repeat;
+        background: url("../img/d-imbir.png") 100% no-repeat;
         top: -12px;
         left: 22px;
       }
@@ -195,8 +195,6 @@
 }
 
 
-
-
 .divider {
   position: relative;
   width: 100%;
@@ -208,7 +206,7 @@
     height: 1px;
     top: 0;
     left: 0;
-    background: #9EBCC6;
+    background: #cacaca;
   }
   &:after {
     content: "";
@@ -218,12 +216,12 @@
     top: 0;
     left: auto;
     right: 0;
-    background: #9EBCC6;
+    background: #cacaca;
   }
   &__triangle {
     width: 30px;
     height: 11px;
-    fill: #9EBCC6;
+    fill: #cacaca;
     position: absolute;
     top: 0;
     left: 50%;
@@ -232,4 +230,125 @@
     transform: translateX(-50%);
   }
 
+}
+@media all and (max-width: 1199px) {
+  .composition {
+    &__additional.-left, &__additional.-right {
+      max-width: 300px;
+      padding-left: 0;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__additional.-right {
+      max-width: 320px;
+    }
+    &__jug {
+      max-width: 238px;
+      &:before {
+        width: 320px;
+        background-size: contain;
+        bottom: -20px;
+      }
+      &:after {
+        width: 630px;
+        background-size: contain;
+        top: -35px;
+        left: 91px;
+      }
+    }
+
+
+  }
+}
+@media all and (max-width: 1023px) {
+  .composition {
+    &__subtitle {
+      margin: 16px auto;
+      font-size: 22px;
+      line-height: 22px;
+    }
+    &__banner {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+    &__jug {
+      max-width: 100%;
+      order: 1;
+      &:before {
+        width: 620px;
+        bottom: 9px;
+        left: -76px;
+      }
+      &:after {
+        display: none;
+      }
+    }
+    &__effect-info {
+      margin-top: 15px;
+    }
+    &__effect-info.-radical {
+      order: 2;
+    }
+    &__effect-info.-elastic {
+      order: 3;
+    }
+    &__legend-box {
+      margin: 20px auto;
+    }
+    &__element-item {
+      max-width: 249px;
+    }
+    &__element-effect {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
+}
+@media all and (max-width: 767px) {
+  .composition {
+    &__subtitle {
+      margin: 10px auto;
+      font-size: 19px;
+    }
+    &__banner {
+      max-width: 300px;
+      margin: 0 auto 15px;
+      font-size: 19px;
+      line-height: 24px;
+    }
+    &__jug {
+      max-width: 300px;
+      &:before {
+        width: 300px;
+        bottom: -30px;
+        left: -44px;
+      }
+    }
+    &__title {
+      font-size: 19px;
+      line-height: 29px;
+    }
+    &__legend {
+      padding: 0 10px;
+      line-height: 24px;
+    }
+    &__elements-box {
+      margin-top: 0;
+    }
+    &__element-image.-lavanda-img {
+      left: 0;
+    }
+    &__element-item {
+      margin-top: 20px;
+      &.-imbir-img {
+        left: 0;
+      }
+      &.-vitamin-item {
+        left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
 }

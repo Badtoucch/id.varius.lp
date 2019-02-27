@@ -37,14 +37,9 @@
   z-index: 2;
 }
 
-//.ever-popup__inner {
-//  padding-top: 0 !important;
-//}
-//
-//.ever-popup__close {
-//  top: 25px !important;
-//  right: 25px !important;
-//}
+.ever-popup {
+  overflow-x: hidden;
+}
 
 .ever-popup__close:after,
 .ever-popup__close:before {

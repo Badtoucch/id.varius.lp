@@ -420,6 +420,12 @@ position: relative;
 .header-form__pack{
 	display: none;
 }
+@-moz-document url-prefix() {
+  .header .line-correct:after {
+		top: 39px;
+		right: -62px;
+}
+}
 @media screen and (max-width: 1199px) {
 
 	.header-nav__list:not(:last-child) {
@@ -649,6 +655,7 @@ position: relative;
 	.header-nav__list{
 		margin-top: 13px;
 		margin-bottom: 13px;
+	
 	}
 	.header-nav{
 		justify-content: center;
@@ -657,5 +664,16 @@ position: relative;
 	}
 	.header-exposition {
     margin-top: 10px;
+}
+.header-assist__list{
+	padding-top: 0;
+		padding-left: 55px;
+		width: 255px;
+		text-align: left;
+}
+.header-assist__list:before{
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
 }
 }

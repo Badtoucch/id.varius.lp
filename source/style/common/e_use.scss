@@ -73,7 +73,7 @@
 			left: -13px;
 			transform: none;
 		}
-		&:after{
+		&::after{
 			content: '2';
 		}
 	}
@@ -85,9 +85,21 @@
     right: -14px;
 			transform: none;
 		}
-		&:after{
+		&::after{
 			content: '3';
 		}
+	}
+}
+.usei2{
+
+	&::after{
+		content: '2';
+	}
+}
+.usei3{
+
+	&::after{
+		content: '3';
 	}
 }
 .lr-line{
@@ -149,6 +161,7 @@
 				}
 			}
 		}
+	
 	}
 	.lr-line:before, .lr-line:after{
 		height: 200px;

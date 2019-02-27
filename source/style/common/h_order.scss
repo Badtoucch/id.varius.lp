@@ -71,6 +71,12 @@
 			font-size: 16px;
 			line-height: normal;
 		}
+		.order .usei2:before{
+			top: -12px;
+		}
+		.use-box__img:before{
+			left: -12px;
+		}
 	}
 	
 	@media screen and (max-width: 767px) {
@@ -82,6 +88,7 @@
 		display: none;
 
 		}
+	
 	}
 	
 	@media screen and (max-width: 639px) {

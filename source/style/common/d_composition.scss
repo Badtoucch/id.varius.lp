@@ -272,7 +272,12 @@
     }
     &__jug {
       max-width: 100%;
+      width: 100%;
       order: 1;
+      flex-grow: 3;
+      img {
+        width: 300px;
+      }
       &:before {
         width: 620px;
         bottom: 9px;
@@ -283,7 +288,10 @@
       }
     }
     &__effect-info {
+      max-width: 100%;
+      width: 100%;
       margin-top: 15px;
+      flex-grow: 1;
     }
     &__effect-info.-radical {
       order: 2;
@@ -317,11 +325,11 @@
       line-height: 24px;
     }
     &__jug {
-      max-width: 300px;
+      max-width: 250px;
       &:before {
         width: 300px;
         bottom: -30px;
-        left: -44px;
+        left: -56px;
       }
     }
     &__title {
@@ -344,6 +352,7 @@
         left: 0;
       }
       &.-vitamin-item {
+        max-width: 300px;
         left: 0;
         margin-top: 20px;
       }

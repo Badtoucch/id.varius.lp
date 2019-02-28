@@ -153,7 +153,8 @@ position: relative;
 }
 .line-correct{
 	&:after{
-		top: 39px;
+		top: auto;
+		bottom: 11px;
 	}
 }
 &-exposition{
@@ -427,7 +428,13 @@ position: relative;
 }
 }
 @media screen and (max-width: 1199px) {
-
+	.header-assist__list span:after{
+		top: 11px;
+	}
+	.header .line-correct:after {
+    top: auto;
+    bottom: 8px;
+}
 	.header-nav__list:not(:last-child) {
     margin-right: 60px;
 }

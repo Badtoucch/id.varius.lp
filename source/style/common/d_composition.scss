@@ -145,7 +145,7 @@
     position: relative;
     z-index: 1;
     &.-lavanda-img {
-      left: -13px;
+      left: 0px;
       margin-bottom: 12px;
       &:before {
         display: block;
@@ -175,7 +175,7 @@
       }
     }
     &.-vitamin-img {
-      left: 14px;
+      left: 6px;
       margin-bottom: -11px;
     }
   }

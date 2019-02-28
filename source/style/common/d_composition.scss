@@ -231,6 +231,9 @@
 }
 @media all and (max-width: 1199px) {
   .composition {
+    &__subtitle {
+      margin: 16px auto 20px;
+    }
     &__additional.-left, &__additional.-right {
       max-width: 300px;
       padding-left: 0;
@@ -356,6 +359,36 @@
         left: 0;
         margin-top: 20px;
       }
+    }
+  }
+}
+@media all and (max-width: 479px) {
+  .composition {
+    &__legend {
+      font-size: 17px;
+      span {
+        font-size: 18px;
+      }
+    }
+
+    &__element-image.-lavanda-img {
+      margin-bottom: 2px;
+    }
+    &__element-image.-imbir-img {
+      margin-bottom: 2px;
+    }
+    &__element-item {
+      margin-top: 35px;
+      &.-vitamin-item {
+        margin-top: 35px;
+      }
+    }
+    &__element-name {
+      color: #000000;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 22px;
+      margin-bottom: 5px;
     }
   }
 }

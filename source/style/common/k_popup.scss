@@ -36,10 +36,12 @@
   position: relative;
   z-index: 2;
 }
-
-.ever-popup {
- 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  .ever-popup {
+		overflow: hidden !important;
+	 }
 }
+
 
 .ever-popup__close:after,
 .ever-popup__close:before {

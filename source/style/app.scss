@@ -344,11 +344,11 @@ margin-top: 17px;
 	border-radius: 5px;
 	background-color: #ffffff;
 	background-image: linear-gradient(to right, #fd7532 0%, #fb905c 26%, #fd7532 50%, #fd6232 51%, #fc8d56 75%, #fd6232 100%);
-	box-shadow: 0px 26px 29px -24px #e46324;
+	box-shadow: 0px 21px 17px -22px #e46324;
 	background-size: 200% auto ;
 	
 	background-position: 0 0;
-  transition: background-position 0.5s;
+  transition: background-position 0.5s,box-shadow 0.5s;
 	color: #ffffff;
 	font-size: 30px;
 	font-weight: 700;
@@ -361,6 +361,7 @@ margin-top: 17px;
 	cursor: pointer;
 	&:hover {
 		background-position: 100% 0;
+		box-shadow: 0px 21px 17px -25px #e46324;
 	}
 }
 .green{
@@ -650,6 +651,7 @@ height: 58px;
 		border-radius: 5px;
 		background-color: #ffffff;
 		background-image: linear-gradient(to right, #fd7532 0%, #fb905c 51%, #fd7532 100%);
+		transition: background-position 0.5s,box-shadow 0.5s;
 		margin-top: 16px;
 		font-size: 27px;
 		font-weight: 900;
@@ -657,7 +659,7 @@ height: 58px;
 		border: 0;
 		color: #fff;
 		border-bottom: 5px solid #e46324;
-		box-shadow: 0px 25px 23px -24px #e46324;
+		box-shadow: 0px 21px 17px -22px #e46324;
 		transition: all 0.5s;
 		&:hover{
 			box-shadow: none;
